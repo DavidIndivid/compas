@@ -1,0 +1,279 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul{
+    list-style-type:none;
+}
+
+html {
+    width: 100%;
+}
+
+body {
+    max-width: 100%;
+    max-height: 100%;
+    background-image: linear-gradient(to left, gray, rgb(75, 72, 72));
+    background: url(./img/fon2.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+    /* background-color:inherit;  для наследования цвета с фона */
+
+}
+
+.header {
+    width: 100%;
+    height: 150px;
+    background-color: #F2D6B0;
+    font-size: 30px;
+    font-family: 'Roboto';
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.header a {
+    width: 1300px;
+    height: 100px;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header img {
+    border-radius: 350px;
+    width: 60px;
+}
+
+.menu {
+    display: none;
+}
+
+.maingl {
+    margin: -60px 0 0 0;
+    width: 100%;
+    height: 803px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.main {
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+    width: 1300px;
+    border-radius: 0 0 50px 50px;
+    background-color: #F2D6B0;
+    box-shadow: 0 17px 50px 0 rgba(11, 20, 26, .19), 0 12px 15px 0 rgba(11, 20, 26, .24);
+
+}
+
+.btns {
+    padding: 0 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 350px;
+    height: 500px;
+    background-color: rgb(255, 254, 210);
+    box-shadow: 0 17px 50px 0 rgba(11, 20, 26, 0.041), 0 12px 15px 0 rgba(11, 20, 26, 0.021);
+    border-radius: 0 0 30px 30px;
+}
+
+
+.button {
+    width: 100%;
+    cursor: pointer;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 40px;
+    background-color: rgb(255, 254, 210);
+    color: var(--Text-Heading-color, #1F1F1F);
+    font-family: roboto;
+    font-size: 25px;
+    padding: 3px;
+    margin: 0 0 10px 0;
+
+}
+
+.button:hover {
+    background-color: #F2D6B0;
+}
+
+.button:active {
+    transform: scale(0.9);
+}
+
+.search {
+    text-align: center;
+}
+
+.search:hover {
+    background-color: rgb(255, 254, 210);
+}
+
+
+.profile {
+    width: 100%;
+    background-color: rgb(255, 254, 210);
+    box-shadow: 0 17px 50px 0 rgba(11, 20, 26, 0.041), 0 12px 15px 0 rgba(11, 20, 26, 0.021);
+    border-radius: 0 0 30px 30px;
+    padding: 10px;
+    overflow-y: auto;
+}
+
+.profile::-webkit-scrollbar {
+    width: 0;
+}
+
+.friends_Profile {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    margin: 0 0 20px 0;
+
+
+}
+
+.avatar {
+    width: 100px;
+    height: 100px;
+    border: 10px solid #F2D6B0;
+    border-radius: 50px;
+}
+
+
+
+
+
+
+
+
+.data {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    flex-wrap: wrap;
+    width: 100%;
+    border-radius: 10px 10px;
+    border: 1px solid rgb(206, 206, 206);
+    padding: 10px;
+}
+
+.myData2 {
+    text-align: center;
+    border: 1px solid rgb(206, 206, 206);
+    border-radius: 40px;
+    padding: 10px;
+    background-color: #F2D6B0;
+    width: 150px;
+    color: #1F1F1F;
+    cursor: auto;
+    font-family: roboto;
+    font-size: 16px;
+}
+
+.btn_fr {
+    border: 0;
+    max-width: 100px;
+    font-size: 20px;
+    margin: 0;
+}
+
+.btn_fr:hover {
+    color: rgba(0, 0, 0, 0.582);
+    background-color: transparent;
+}
+
+
+@media screen and (max-width:700px) {
+    .header {
+        display: flex;
+        justify-content: center;
+    }
+
+    .header a {
+        max-width: 400px;
+        max-height: 100px;
+    }
+
+    .btns {
+        background-color: rgb(255, 254, 210);
+        box-shadow: 0 17px 50px 0 rgba(11, 20, 26, 0.527), 0 12px 15px 0 rgba(11, 20, 26, 0.473);
+        position: absolute;
+        right: 1px;
+        top: 88px;
+        height: 1px;
+    }
+
+    .btns_none {
+        display: none;
+
+    }
+
+
+    .btns_block {
+        display: flex;
+        animation: men 1.5s ease 0s 1 normal forwards;
+
+    }
+
+    @keyframes men {
+        to {
+            height: 500px;
+
+
+        }
+    }
+
+    .menu {
+        border: 0;
+        background-color: transparent;
+        border-radius: 15px;
+        height: 60px;
+        display: block;
+        margin: 25px 0 0 0;
+        cursor: pointer;
+
+    }
+
+    .menu:hover {
+        background-color: rgb(255, 254, 210);
+    }
+
+    .menu_img:active {
+        transform: scale(0.8) rotate(-90deg);
+        transition: 0.1s;
+
+    }
+
+    .button_mobile {
+        opacity: 0;
+        animation: btn 1.5s ease 0.2s 1 normal forwards;
+    }
+
+    @keyframes btn {
+        to {
+            opacity: 1;
+        }
+    }
+    .main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .profile{
+        height: 88%;
+    }
+}

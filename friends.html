@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/comp-AmoyShare.png">
+    <link rel="stylesheet" href="./friends.css">
+    <title>Compass</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="./friends.html">
+            <img src="./img/comp-AmoyShare.png" alt="">Compass</a>
+            <button class="menu"><img src="./img/menu.svg" alt="menu" class="menu_img"></button>
+
+    </header>
+    <main class="maingl">
+        <div class="main">
+            <div>
+                <div class="btns btns_none">
+                    <form action="">
+                        <input type="button" onclick="home()" value="Главная" class="button button_mobile">
+                        <input type="button" onclick="image()" value="Фото" class="button button_mobile">
+                        <input type="button" onclick="community()" value="Сообщества" class="button button_mobile">
+                    </form>
+                </div>
+                <br>
+                <input type="text" id="myInput" placeholder="ПОИСК" onkeyup="friendsSearch()" class="button search">
+            </div>
+            <section class="profile">
+                <ul id="myUl">
+                    <li>
+                        <div class="friends_Profile">
+                            <img src="./img/avatar1.png" alt="avatar" class="avatar">
+                            <div class="data">
+                                <a href="" id="name" class="myData2">Александр</a>
+                                <div id="last" class="myData2">Иванов
+                                </div>
+                                <button class="button btn_fr ">Профиль</button>
+                                <button class="button btn_fr ">Написать</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friends_Profile">
+                            <img src="./img/avatar2.png" alt="avatar" class="avatar">
+                            <div class="data">
+                                <a href="" id="name" class="myData2">Екатерина</a>
+
+                                <div id="last" class="myData2">Козлова</div>
+
+                                <button class="button btn_fr ">Профиль</button>
+                                <button class="button btn_fr ">Написать</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friends_Profile">
+                            <img src="./img/avatar6.png" alt="avatar" class="avatar">
+                            <div class="data">
+                                
+                                    <a href="" id="name" class="myData2">Михаил </a>
+                                    <div id="last" class="myData2">Петров</div>
+                                <button class="button btn_fr ">Профиль</button>
+                                <button class="button btn_fr ">Написать</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friends_Profile">
+                            <img src="./img/avatar4.png" alt="avatar" class="avatar">
+                            <div class="data">
+                                
+                                    <a href="" id="name" class="myData2">Ольга </a>
+                                
+                                
+                                    <div id="last" class="myData2">Смирнова</div>
+                                
+                                <button class="button btn_fr ">Профиль</button>
+                                <button class="button btn_fr ">Написать</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friends_Profile">
+                            <img src="./img/avatar2.png" alt="avatar" class="avatar">
+                            <div class="data">
+                                
+                                    <a href="" id="name" class="myData2">Дмитрий </a>
+                                
+                                
+                                    <div id="last" class="myData2">Кузнецов</div>
+                                
+                                <button class="button btn_fr ">Профиль</button>
+                                <button class="button btn_fr ">Написать</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friends_Profile">
+                            <img src="./img/avatar3.png" alt="avatar" class="avatar">
+                            <div class="data">
+                                
+                                    <a href="" id="name" class="myData2">Анна </a>
+                                
+                                
+                                    <div id="last" class="myData2">Васильева</div>
+                                
+                                <button class="button btn_fr ">Профиль</button>
+                                <button class="button btn_fr ">Написать</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friends_Profile">
+                            <img src="./img/avatar5.png" alt="avatar" class="avatar">
+                            <div class="data">
+                                
+                                    <a href="" id="name" class="myData2">Сергей </a>
+                                
+                                
+                                    <div id="last" class="myData2">Попов</div>
+                                
+                                <button class="button btn_fr ">Профиль</button>
+                                <button class="button btn_fr ">Написать</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friends_Profile">
+                            <img src="./img/avatar2.png" alt="avatar" class="avatar">
+                            <div class="data">
+                                
+                                    <a href="" id="name" class="myData2">Ирина </a>
+                                
+                                
+                                    <div id="last" class="myData2">Морозова</div>
+                                
+                                <button class="button btn_fr ">Профиль</button>
+                                <button class="button btn_fr ">Написать</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friends_Profile">
+                            <img src="./img/avatar6.png" alt="avatar" class="avatar">
+                            <div class="data">
+                                
+                                    <a href="" id="name" class="myData2">Андрей </a>
+                                
+                                
+                                    <div id="last" class="myData2">Новиков</div>
+                                
+                                <button class="button btn_fr ">Профиль</button>
+                                <button class="button btn_fr ">Написать</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friends_Profile">
+                            <img src="./img/avatar4.png" alt="avatar" class="avatar">
+                            <div class="data">
+                                
+                                    <a href="" id="name" class="myData2">Наталья </a>
+                                
+                                
+                                    <div id="last" class="myData2">Волкова</div>
+                                
+                                <button class="button btn_fr ">Профиль</button>
+                                <button class="button btn_fr ">Написать</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friends_Profile">
+                            <img src="./img/avatar2.png" alt="avatar" class="avatar">
+                            <div class="data">
+                                
+                                    <a href="" id="name" class="myData2">Павел </a>
+                                
+                                
+                                    <div id="last" class="myData2">Кузьмин</div>
+                                
+                                <button class="button btn_fr ">Профиль</button>
+                                <button class="button btn_fr ">Написать</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friends_Profile">
+                            <img src="./img/avatar1.png" alt="avatar" class="avatar">
+                            <div class="data">
+                                
+                                    <a href="" id="name" class="myData2">Елена </a>
+                                
+                                
+                                    <div id="last" class="myData2">Алексеева</div>
+                                
+                                <button class="button btn_fr ">Профиль</button>
+                                <button class="button btn_fr ">Написать</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friends_Profile">
+                            <img src="./img/avatar5.png" alt="avatar" class="avatar">
+                            <div class="data">
+                                
+                                    <a href="" id="name" class="myData2">Алексей </a>
+                                
+                                
+                                    <div id="last" class="myData2">Лебедев</div>
+                               
+                                <button class="button btn_fr ">Профиль</button>
+                                <button class="button btn_fr ">Написать</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friends_Profile">
+                            <img src="./img/avatar3.png" alt="avatar" class="avatar">
+                            <div class="data">
+                                
+                                    <a href="" id="name" class="myData2">Мария </a>
+                                
+                                
+                                    <div id="last" class="myData2">Соколова</div>
+                                
+                                <button class="button btn_fr ">Профиль</button>
+                                <button class="button btn_fr ">Написать</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friends_Profile">
+                            <img src="./img/avatar6.png" alt="avatar" class="avatar">
+                            <div class="data">
+                                
+                                    <a href="" id="name" class="myData2">Владимир </a>
+                                
+                                
+                                    <div id="last" class="myData2">Козлов</div>
+                                
+                                <button class="button btn_fr ">Профиль</button>
+                                <button class="button btn_fr ">Написать</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friends_Profile">
+                            <img src="./img/avatar5.png" alt="avatar" class="avatar">
+                            <div class="data">
+                                
+                                    <a href="" id="name" class="myData2">Анастасия </a>
+                                
+                                
+                                    <div id="last" class="myData2">Михайлова</div>
+                                
+                                <button class="button btn_fr ">Профиль</button>
+                                <button class="button btn_fr ">Написать</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friends_Profile">
+                            <img src="./img/avatar4.png" alt="avatar" class="avatar">
+                            <div class="data">
+                                
+                                    <a href="" id="name" class="myData2">Илья </a>
+                                
+                                
+                                    <div id="last" class="myData2">Николаев</div>
+                                
+                                <button class="button btn_fr ">Профиль</button>
+                                <button class="button btn_fr ">Написать</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friends_Profile">
+                            <img src="./img/avatar3.png" alt="avatar" class="avatar">
+                            <div class="data">
+                                
+                                    <a href="" id="name" class="myData2">Татьяна </a>
+                                
+                                
+                                    <div id="last" class="myData2">Иванова</div>
+                                
+                                <button class="button btn_fr ">Профиль</button>
+                                <button class="button btn_fr ">Написать</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friends_Profile">
+                            <img src="./img/avatar2.png" alt="avatar" class="avatar">
+                            <div class="data">
+                                
+                                    <a href="" id="name" class="myData2">Денис </a>
+                                
+                                
+                                    <div id="last" class="myData2">Семенов</div>
+                                
+                                <button class="button btn_fr ">Профиль</button>
+                                <button class="button btn_fr ">Написать</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="friends_Profile">
+                            <img src="./img/avatar1.png" alt="avatar" class="avatar">
+                            <div class="data">
+                                
+                                    <a href="" id="name" class="myData2">Юлия </a>
+                                
+                                
+                                    <div id="last" class="myData2">Федорова</div>
+                                
+                                <button class="button btn_fr ">Профиль</button>
+                                <button class="button btn_fr ">Написать</button>
+                            </div>
+                        </div>
+                    </li>
+
+
+
+
+
+
+                </ul>
+
+            </section>
+        </div>
+    </main>
+</body>
+<script src="./friends.js"></script>
+
+</html>

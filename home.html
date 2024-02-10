@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./img/comp-AmoyShare.png">
+    <link rel="stylesheet" href="./home.css">
+    <title>Compass</title>
+</head>
+
+<body>
+    <header class="header">
+        <a href="./home.html"><img src="./img/comp-AmoyShare.png" alt="">Compass </a>
+        <button class="menu"><img src="./img/menu.svg" alt="menu" class="menu_img"></button>
+        
+    </header>
+    <main class="maingl">
+        <div class="main">
+            <div class="btns btns_none">
+                <form action="">
+                    <input type="button" onclick="exit()" value="Выход" class="button button_mobile">
+                    <input type="button" onclick="friends()" value="Друзья" class="button button_mobile">
+                    <input type="button" onclick="image()" value="Фото" class="button button_mobile">
+                    <input type="button" onclick="community()" value="Сообщества" class="button button_mobile">
+                </form>
+            </div>
+            <section class="profile">
+                <div class="myProfile">
+                    <button class="btn_avatar"><img src="./img/avatar2.png" alt="avatar" class="avatar" id="avatar__img"></button>
+                    <div class="data">
+                        <div class="myData1">Имя <div id="name" class="myData2"></div>
+                        </div>
+                        <div class="myData1">Фамилия <div id="last" class="myData2"></div>
+                        </div>
+                        <div class="myData1">Город <div id="city" class="myData2"></div>
+                        </div>
+                        <div class="myData1"> О себе <div id="mySelf" class="myData2"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="smena_avatara_none">
+                    <img src="./img/avatar4.png" alt="" class="smena-avatara__img" onclick="document.getElementById('avatar__img').src='./img/avatar4.png'">
+                    <img src="./img/avatar1.png" alt="" class="smena-avatara__img" onclick="document.getElementById('avatar__img').src='./img/avatar1.png'">
+                    <img src="./img/avatar2.png" alt="" class="smena-avatara__img" onclick="document.getElementById('avatar__img').src='./img/avatar2.png'">
+                    <img src="./img/avatar3.png" alt="" class="smena-avatara__img" onclick="document.getElementById('avatar__img').src='./img/avatar3.png'">
+                    <img src="./img/avatar5.png" alt="" class="smena-avatara__img" onclick="document.getElementById('avatar__img').src='./img/avatar5.png'">
+                    <img src="./img/avatar6.png" alt="" class="smena-avatara__img" onclick="document.getElementById('avatar__img').src='./img/avatar6.png'">
+                </div>
+                <div class="post">
+                    <p style="font-size: 30px; font-family: roboto; color: gray;">Ничего нет</p>
+                    <input type="submit" value="Опубликовать" class="post-btn button">
+                    <br><br>
+                    <a href="https://www.tinkoff.ru/baf/7pZX5eVVMUN"><aside class="ref_tincoff"></aside></a>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+</body>
+<script src="./home.js"></script>
+
+</html>
